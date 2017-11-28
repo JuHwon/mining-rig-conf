@@ -7,8 +7,10 @@ if [ -z "$CMD" ]; then
   echo "No curl or wget available. Aborting."
 else
   echo "Downloading script files..."
-  mkdir -p "$HOME/scripts" && \
-  #eval "$CMD https://github.com/juhwon/mining-rig-conf/tarball/master | tar xzv - -C ~/scripts --strip-components=1 scripts "
-  eval "$CMD https://github.com/juhwon/mining-rig-conf/tarball/master | tar xzvf - --strip-components=2 -C ~/scripts"
+  mkdir -p "$HOME/.mining-scripts" && \
+  mkdir -p "$HOME/.config/autostart" && \
+  eval "$CMD https://github.com/juhwon/mining-rig-conf/tarball/master | tar xzvf - --strip-components=1 -C ~/.mining-scripts" && \
+  cp -r ~/.mining-scripts/scripts ~/scripts && \
+  cp ~/.mining-scripts/autostart/* ~/.config/autostart/
 fi
 

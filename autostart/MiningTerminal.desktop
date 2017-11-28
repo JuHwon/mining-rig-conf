@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Exec=gnome-terminal --command "xterm attach -t miner"
+Hidden=false
+X-GNOME-Autostart-enabled=true
+Name=Miner Terminal
+Comment=
+
