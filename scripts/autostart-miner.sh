@@ -1,6 +1,6 @@
 #!/bin/bash
 
-startOffset=5
+startOffset=30
 
 # create tmux session
 tmux new-session -d -s miner
