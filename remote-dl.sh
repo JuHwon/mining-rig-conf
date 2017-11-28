@@ -9,9 +9,11 @@ else
   echo "Downloading script files..."
   mkdir -p "$HOME/.mining-scripts" && \
   mkdir -p "$HOME/.config/autostart" && \
+  mkdir -p "$HOME/.local/share/applications" && \
   eval "$CMD https://github.com/juhwon/mining-rig-conf/tarball/master | tar xzvf - --strip-components=1 -C ~/.mining-scripts" && \
   cp -r ~/.mining-scripts/scripts ~/scripts && \
-  cp ~/.mining-scripts/autostart/* ~/.config/autostart/ && \
+  cp ~/.mining-scripts/autostart/MiningTerminal.desktop ~/.local/share/applications/ && \
+  ln -s ~/.local/share/applications/MiningTerminal.desktop ~/.config/autostart/ && \
   rm -rf ~/.mining-scripts
 fi
 
