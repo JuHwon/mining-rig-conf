@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Exec=gnome-terminal --command "tmux attach -t miner"
+Hidden=false
+X-GNOME-Autostart-enabled=true
+Name=Mining Terminal
+Comment=
+

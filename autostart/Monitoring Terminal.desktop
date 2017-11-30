@@ -1,8 +1,7 @@
 [Desktop Entry]
 Type=Application
-Exec=gnome-terminal --command "tmux attach -t miner"
+Exec=gnome-terminal --command "tmux attach -t monitoring"
 Hidden=false
 X-GNOME-Autostart-enabled=true
-Name=Miner Terminal
+Name=Monitoring Terminal
 Comment=
-

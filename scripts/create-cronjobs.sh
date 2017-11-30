@@ -4,3 +4,5 @@
 
 
 (crontab -l ; echo "@reboot bash $HOME/scripts/autostart-miner.sh") | sort - | uniq - | crontab -
+
+(crontab -l ; echo "@reboot bash $HOME/scripts/autostart-monitoring.sh") | sort - | uniq - | crontab -
