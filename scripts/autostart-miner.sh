@@ -9,8 +9,8 @@ tmux new-session -d -s miner
 tmux send-keys -t miner "# Waiting $startOffset seconds to start the miner"
 for (( i=0; i<=$startOffset; i++ ))
 do
-tmux send-keys -t miner "."
-sleep 1
+  tmux send-keys -t miner "."
+  sleep 1
 done
 tmux send-keys -t miner C-m
 
