@@ -7,5 +7,5 @@ sudo update-grub
 
 sudo nvidia-xconfig -a --cool-bits=28 --enable-empty-initial-configuration
 
-sudo systemctl restart lightdm.services
+sudo systemctl restart lightdm.service
 
