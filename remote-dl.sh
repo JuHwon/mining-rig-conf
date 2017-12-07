@@ -24,7 +24,7 @@ else
   done
 
   echo "Copy user config files..."
-  cp $HOME/$dlFolder/config/* $HOME/
+  cp $HOME/$dlFolder/config/.* $HOME/
 
   echo "Cleaning up..."
   rm -rf ~/.mining-scripts
