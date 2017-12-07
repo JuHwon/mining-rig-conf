@@ -23,6 +23,9 @@ else
     ln -s "$HOME/.local/share/applications/$filename" "$HOME/.config/autostart/"
   done
 
+  echo "Copy user config files..."
+  cp $HOME/$dlFolder/config/* $HOME/
+
   echo "Cleaning up..."
   rm -rf ~/.mining-scripts
 fi
